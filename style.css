@@ -31,10 +31,12 @@ section{
      
 }
 
+
 div{
     margin: auto;
     margin-bottom: 10px;
     justify-content: space-around;
+    transition: 1s;
     
     
 }
@@ -49,11 +51,20 @@ div#borda{
     justify-content: space-between;
     margin-top: 10px;
     animation: degrade 3s alternate infinite;
+    cursor: pointer;
    }
 
 div a{
     color: white;
     text-decoration: none;
+}
+
+div#borda:hover{
+    transform: scale(.9);
+}
+
+div a:hover{
+    text-decoration: underline;
 }
 
 span i{
@@ -104,5 +115,16 @@ div i{
 
     p{
         font-size: 15px;
+        animation: paragrafos 1s;
+    }
+
+    @keyframes paragrafos {
+        0%{
+            transform: scale(.5);
+        }
+
+        100%{
+            transform: scale(1);
+        }
     }
 }

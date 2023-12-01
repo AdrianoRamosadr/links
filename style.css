@@ -81,4 +81,13 @@ div i{
     font-size: 1.5em;
 }
 
+@media screen and (min-width:400px) {
+    div#borda{
+        width: 300px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+}
 

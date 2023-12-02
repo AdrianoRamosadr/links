@@ -26,7 +26,7 @@ h2{
 
 
 section{
-    
+    padding: 20px;
     margin-top: 10px;
     
      
@@ -158,6 +158,9 @@ span#what{
     margin-bottom: -2;
     animation: girar 1s ease-in-out;
 }
+p{
+    font-size: 15px;
+}
 
 @keyframes girar {
     0%{
@@ -194,7 +197,7 @@ span#what{
     }
 
     p{
-        font-size: 15px;
+        font-size: 13px;
         animation: paragrafos 1s;
     }
 

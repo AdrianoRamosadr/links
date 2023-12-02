@@ -24,6 +24,7 @@ h2{
 }
 
 
+
 section{
     
     margin-top: 10px;
@@ -37,6 +38,7 @@ div{
     margin-bottom: 10px;
     justify-content: space-around;
     transition: 1s;
+    animation: degrade 3s alternate infinite;
     
     
 }
@@ -52,7 +54,32 @@ div#borda{
     margin-top: 10px;
     animation: degrade 3s alternate infinite;
     cursor: pointer;
+
    }
+
+  div#bord{
+    background-image: linear-gradient(to right, black,#1f1313af,black);
+    background-size: 500% 100%;
+    height: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  div#bor{
+    background-image: linear-gradient(to right, black,#1f1313af,black);
+    background-size: 500% 100%;
+    height: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor: pointer;
+  }
 
 div a{
     color: white;
@@ -60,6 +87,13 @@ div a{
 }
 
 div#borda:hover{
+    transform: scale(.9);
+}
+div#bord:hover{
+    transform: scale(.9);
+}
+
+div#bor:hover{
     transform: scale(.9);
 }
 
@@ -81,20 +115,58 @@ div i{
     margin-top: -5px;
 }
 
-#icons{
+div#icons{
+    display: flex;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
     
 }
 
-#icons i{
-    color: white;
-    font-size: 2em;
+div#icons span{
     margin: 10px;
+}
+
+div#icons span i{
     background-color: black;
-    padding: 12px;
+    width: 30px;
+    padding: 9px;
     border-radius: 50%;
-    font-size: 1.5em;
+    
+}
+
+div#icons span i:hover{
+    transition: border 1s;
+    border: 2px solid white;
+}
+
+
+span#sms{
+    font-size: 1.2em;
+    cursor: pointer;
+    animation: girar 2s ease-in-out;
+    
+}
+span#twitter{
+    font-size: 1.2em;
+    cursor: pointer;
+    animation: girar 2s ease-in-out;
+}
+
+span#what{
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-bottom: -2;
+    animation: girar 1s ease-in-out;
+}
+
+@keyframes girar {
+    0%{
+        transform: scale(.5);
+    }
+
+    100%{
+         
+    }
 }
 
 
@@ -110,6 +182,14 @@ div i{
 
 @media screen and (min-width:400px) {
     div#borda{
+        width: 300px;
+    }
+
+    div#bord{
+        width: 300px;
+    }
+
+    div#bor{
         width: 300px;
     }
 

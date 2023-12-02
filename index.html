@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <main>
-        <span><i class="bi bi-person-circle"></i></span>
+        <span><i id="pessoa" class="bi bi-person-circle"></i></span>
 
         <h2>@AdrianoRamos</h2>
        
@@ -18,23 +19,59 @@
         <section>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor soluta fuga!</p>
-            <div id="borda">
-                <a href="#">Instagram</a>
-                <i class="bi bi-instagram"></i>
-            </div>
-            <div id="borda">
-                <a href="https://free.facebook.com/profile.php?id=100087110730610&eav=AfZcO7deztHId-ed8EGjkrCbo1ctiBd2K8MA3rn5EfVPgfdxIrHwzVXk0-8lwSKJQQ4&refid=46&__xts__%5B0%5D=12.AbrMLwzHBnFlcixdHODrED2SB_mPmrkpS4C9enBy-dIOZJVEPELBNPCZ6yrU1cJE83pyp0Bw5I4JHnkH5aQ--RNmhkvBJlzuBlZByL5qtPXiHOwmgtpBVrxCBccCETJ5-ow9swPA583Fe20_XsHLrc-iNsIxPsLHpV2rLd7ui7HJu90qZhZMXYq2FThaf6sWaLvuESQCgnJBqxtgOqgERpylbcduUr1LVZ70OFN02y6Ce-hPJ7B5cazg1uaAARWPbyoDbxgXuA1rs_eyGZoOAVyQl-mjVgJOzJNyQScRUImQ-GkvrIT2E1JA4feDAsfD3Xh7OnGw6NsHkQRGF15IOB7NUnE3Ce1Vi80VDOylS4itbIxtRqbR61IhpkWv1DAyUedNou9fdQI5yOf3UwB1lcG_C4OKksT4h0zgc5h6AvPhl2qNm6TOMNuHAOfAUBcvgwIWu_Lc4GiA5n_YkOWils660W8olpYUc4Dlus-Yq5BrJyzHn0wQz5osAMoUgdZfmXsccdPwR64fOOoB3AAaomUMMpr21QbKb1vPczmyx8mTbYSNpfQ83N8dXnzZNyn2srY&paipv=0" target="_blank">Facebook</a>
-                <i class="bi bi-facebook"></i>
-            </div>
-            <div id="borda">
-                <a href="https://github.com/AdrianoRamosadr" target="_blank">Github</a>
-                <i class="bi bi-github"></i>
-            </div>
-            <div id="icons">
-                <i class="bi bi-envelope"></i> <i class="bi bi-twitter"></i> <i class="bi bi-whatsapp"></i>
-            </div>
+                <div>
+                    <div id="borda">
+                        <a href="#">Instagram</a>
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <div id="bord">
+                        <a href="https://free.facebook.com/profile.php?id=100087110730610&eav=AfZcO7deztHId-ed8EGjkrCbo1ctiBd2K8MA3rn5EfVPgfdxIrHwzVXk0-8lwSKJQQ4&refid=46&__xts__%5B0%5D=12.AbrMLwzHBnFlcixdHODrED2SB_mPmrkpS4C9enBy-dIOZJVEPELBNPCZ6yrU1cJE83pyp0Bw5I4JHnkH5aQ--RNmhkvBJlzuBlZByL5qtPXiHOwmgtpBVrxCBccCETJ5-ow9swPA583Fe20_XsHLrc-iNsIxPsLHpV2rLd7ui7HJu90qZhZMXYq2FThaf6sWaLvuESQCgnJBqxtgOqgERpylbcduUr1LVZ70OFN02y6Ce-hPJ7B5cazg1uaAARWPbyoDbxgXuA1rs_eyGZoOAVyQl-mjVgJOzJNyQScRUImQ-GkvrIT2E1JA4feDAsfD3Xh7OnGw6NsHkQRGF15IOB7NUnE3Ce1Vi80VDOylS4itbIxtRqbR61IhpkWv1DAyUedNou9fdQI5yOf3UwB1lcG_C4OKksT4h0zgc5h6AvPhl2qNm6TOMNuHAOfAUBcvgwIWu_Lc4GiA5n_YkOWils660W8olpYUc4Dlus-Yq5BrJyzHn0wQz5osAMoUgdZfmXsccdPwR64fOOoB3AAaomUMMpr21QbKb1vPczmyx8mTbYSNpfQ83N8dXnzZNyn2srY&paipv=0" target="_blank">Facebook</a>
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                    <div id="bor">
+                        <a href="https://github.com/AdrianoRamosadr" target="_blank">Github</a>
+                        <i class="bi bi-github"></i>
+                    </div>
+                </div>
         </section>
+        <footer>
+            <div id="icons"><span id="sms" onclick="sms()"><i class="bi bi-envelope"></i></span><span id="twitter" onclick="blue()"><i class="bi bi-twitter"></i></span><span id="what" onclick="green()"><i class="bi bi-whatsapp"></i></span></div>
+        </div></footer>
     </main>
-    <footer></footer>
+
+    <script>
+         var person = document.querySelector('#pessoa')
+         var bordas = document.getElementById('borda')
+         var bor = document.getElementById('bord')
+         var bo = document.getElementById('bor')
+    function blue(){
+        var azul = document.getElementById('twitter')
+       person.style.color = 'azure'
+        document.body.style.background = '#1f92f4'
+        bordas.style.background = '#1f99f4'
+        bor.style.background ='#1f99f4'
+        bor.style.boxShadow = ''
+        bo.style.background = '#2827de'
+    }
+
+    function sms(){
+        document.body.style.background = 'bisque'
+        bordas.style.background = '#ff9408'
+        bor.style.background = '#ff9408'
+        bo.style.background = '#ff9408'
+        person.style.color = '#ff9408'
+    }
+
+    function green(){
+        var green = document.getElementById('what')
+        person.style.color = '#008069'
+        document.body.style.background = '#efe7de'
+        bordas.style.background = '#008069'
+        bor.style.background = '#008069'
+        bo.style.background = '#008069'
+        
+    }
+    </script>
+   
 </body>
 </html>

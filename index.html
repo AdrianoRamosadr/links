@@ -10,32 +10,33 @@
     
 </head>
 <body>
+    
     <main>
         <span><i id="pessoa" class="bi bi-person-circle"></i></span>
 
-        <h2>@AdrianoRamos</h2>
+        <h2 id="nome">@AdrianoRamos</h2>
        
        
         <section>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor soluta fuga!</p>
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor soluta fuga!</p>
                 <div>
                     <div id="borda">
-                        <a href="#">Instagram</a>
-                        <i class="bi bi-instagram"></i>
+                        <a id="preto1" href="#">Instagram</a>
+                        <i id="cor1" class="bi bi-instagram"></i>
                     </div>
                     <div id="bord">
-                        <a href="https://free.facebook.com/profile.php?id=100087110730610&eav=AfZcO7deztHId-ed8EGjkrCbo1ctiBd2K8MA3rn5EfVPgfdxIrHwzVXk0-8lwSKJQQ4&refid=46&__xts__%5B0%5D=12.AbrMLwzHBnFlcixdHODrED2SB_mPmrkpS4C9enBy-dIOZJVEPELBNPCZ6yrU1cJE83pyp0Bw5I4JHnkH5aQ--RNmhkvBJlzuBlZByL5qtPXiHOwmgtpBVrxCBccCETJ5-ow9swPA583Fe20_XsHLrc-iNsIxPsLHpV2rLd7ui7HJu90qZhZMXYq2FThaf6sWaLvuESQCgnJBqxtgOqgERpylbcduUr1LVZ70OFN02y6Ce-hPJ7B5cazg1uaAARWPbyoDbxgXuA1rs_eyGZoOAVyQl-mjVgJOzJNyQScRUImQ-GkvrIT2E1JA4feDAsfD3Xh7OnGw6NsHkQRGF15IOB7NUnE3Ce1Vi80VDOylS4itbIxtRqbR61IhpkWv1DAyUedNou9fdQI5yOf3UwB1lcG_C4OKksT4h0zgc5h6AvPhl2qNm6TOMNuHAOfAUBcvgwIWu_Lc4GiA5n_YkOWils660W8olpYUc4Dlus-Yq5BrJyzHn0wQz5osAMoUgdZfmXsccdPwR64fOOoB3AAaomUMMpr21QbKb1vPczmyx8mTbYSNpfQ83N8dXnzZNyn2srY&paipv=0" target="_blank">Facebook</a>
-                        <i class="bi bi-facebook"></i>
+                        <a id="preto2" href="https://free.facebook.com/profile.php?id=100087110730610&eav=AfZcO7deztHId-ed8EGjkrCbo1ctiBd2K8MA3rn5EfVPgfdxIrHwzVXk0-8lwSKJQQ4&refid=46&__xts__%5B0%5D=12.AbrMLwzHBnFlcixdHODrED2SB_mPmrkpS4C9enBy-dIOZJVEPELBNPCZ6yrU1cJE83pyp0Bw5I4JHnkH5aQ--RNmhkvBJlzuBlZByL5qtPXiHOwmgtpBVrxCBccCETJ5-ow9swPA583Fe20_XsHLrc-iNsIxPsLHpV2rLd7ui7HJu90qZhZMXYq2FThaf6sWaLvuESQCgnJBqxtgOqgERpylbcduUr1LVZ70OFN02y6Ce-hPJ7B5cazg1uaAARWPbyoDbxgXuA1rs_eyGZoOAVyQl-mjVgJOzJNyQScRUImQ-GkvrIT2E1JA4feDAsfD3Xh7OnGw6NsHkQRGF15IOB7NUnE3Ce1Vi80VDOylS4itbIxtRqbR61IhpkWv1DAyUedNou9fdQI5yOf3UwB1lcG_C4OKksT4h0zgc5h6AvPhl2qNm6TOMNuHAOfAUBcvgwIWu_Lc4GiA5n_YkOWils660W8olpYUc4Dlus-Yq5BrJyzHn0wQz5osAMoUgdZfmXsccdPwR64fOOoB3AAaomUMMpr21QbKb1vPczmyx8mTbYSNpfQ83N8dXnzZNyn2srY&paipv=0" target="_blank">Facebook</a>
+                        <i id="cor2" class="bi bi-facebook"></i>
                     </div>
                     <div id="bor">
-                        <a href="https://github.com/AdrianoRamosadr" target="_blank">Github</a>
-                        <i class="bi bi-github"></i>
+                        <a id="preto3" href="https://github.com/AdrianoRamosadr" target="_blank">Github</a>
+                        <i id="cor3" class="bi bi-github"></i>
                     </div>
                 </div>
         </section>
         <footer>
-            <div id="icons"><span id="sms" onclick="sms()"><i class="bi bi-envelope"></i></span><span id="twitter" onclick="blue()"><i class="bi bi-twitter"></i></span><span id="what" onclick="green()"><i class="bi bi-whatsapp"></i></span></div>
+            <div id="icons"><span id="sms" onclick="sms()"><i id="mens" class="bi bi-envelope"></i></span><span id="twitter" onclick="blue()"><i id="twitt" class="bi bi-twitter"></i></span><span id="what" onclick="green()"><i id="whats" class="bi bi-whatsapp"></i></span></div>
         </div></footer>
     </main>
 
@@ -44,31 +45,84 @@
          var bordas = document.getElementById('borda')
          var bor = document.getElementById('bord')
          var bo = document.getElementById('bor')
+         var pre1 = document.getElementById('preto1') 
+         var pre2 = document.getElementById('preto2')
+         var pre3 = document.getElementById('preto3')
+         var bla = document.getElementById('cor1')
+        var blac = document.getElementById('cor2')
+        var black = document.getElementById('cor3')
+        var pa = document.getElementById('para')
+        var nam = document.querySelector('#nome')
+        var azul = document.getElementById('twitt')
+        var wha = document.getElementById('whats')
+        var sm = document.getElementById('mens')
     function blue(){
-        var azul = document.getElementById('twitter')
+        nam.style.color = 'white'
+        pa.style.color = 'white'
+        blac.style.color = 'black'
+        black.style.color = 'black'
+        sm.style.color = 'black'
+        sm.style.background = 'white'
+        wha.style.color = 'black'
+        wha.style.background = 'white'
+        azul.style.color = 'black'
+        azul.style.background = 'white'
+        bla.style.color = 'black'
        person.style.color = 'azure'
-        document.body.style.background = '#1f92f4'
-        bordas.style.background = '#1f99f4'
-        bor.style.background ='#1f99f4'
+        document.body.style.background = '#282828'
+        bordas.style.background = 'white'
+        bor.style.background ='white'
         bor.style.boxShadow = ''
-        bo.style.background = '#2827de'
+        bo.style.background = 'white'
+        pre1.style.color = 'black'
+        pre2.style.color = 'black'
+        pre3.style.color = 'black'
     }
 
     function sms(){
+        nam.style.color = 'black'
         document.body.style.background = 'bisque'
         bordas.style.background = '#ff9408'
         bor.style.background = '#ff9408'
         bo.style.background = '#ff9408'
         person.style.color = '#ff9408'
+        blac.style.color = 'black'
+        black.style.color = 'black'
+        bla.style.color = 'black'
+        pre1.style.color = 'black'
+        pre2.style.color = 'black'
+        pre3.style.color = 'black'
+        pa.style.color = 'black'
+        sm.style.color = 'white'
+        sm.style.background = 'black'
+        wha.style.color = 'white'
+        wha.style.background = 'black'
+        azul.style.color = 'white'
+        azul.style.background = 'black'
     }
 
     function green(){
+        nam.style.color = 'black'
         var green = document.getElementById('what')
         person.style.color = '#008069'
         document.body.style.background = '#efe7de'
         bordas.style.background = '#008069'
         bor.style.background = '#008069'
         bo.style.background = '#008069'
+        pa.style.color = 'black'
+        blac.style.color = 'white'
+        black.style.color = 'white'
+        bla.style.color = 'white'
+        pre1.style.color = 'white'
+        pre2.style.color = 'white'
+        pre3.style.color = 'white'
+        sm.style.color = 'white'
+        sm.style.background = 'black'
+        wha.style.color = 'white'
+        wha.style.background = 'black'
+        azul.style.color = 'white'
+        azul.style.background = 'black'
+
         
     }
     </script>

@@ -6,7 +6,18 @@
 
 body{
     background-color: cornflowerblue;
-    
+}
+
+span#home{
+    padding-left: px;
+}
+
+span#home i{
+   color: white;
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-left: 50%;
+    cursor: pointer;
 }
 
 main{

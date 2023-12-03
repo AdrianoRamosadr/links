@@ -13,7 +13,7 @@
     
     
     <main>
-        <span id="home"><i class="bi bi-house"></i></span>
+        <span id="home"><i id="verde" class="bi bi-house"></i></span>
         <span><i id="pessoa" class="bi bi-person-circle"></i></span>
         
 
@@ -59,7 +59,9 @@
         var azul = document.getElementById('twitt')
         var wha = document.getElementById('whats')
         var sm = document.getElementById('mens')
+        var ver = document.getElementById('verde')
     function blue(){
+        ver.style.color = 'white'
         nam.style.color = 'white'
         pa.style.color = 'white'
         blac.style.color = 'black'
@@ -83,6 +85,7 @@
     }
 
     function sms(){
+        ver.style.color = '#ff9408'
         nam.style.color = 'black'
         document.body.style.background = 'bisque'
         bordas.style.background = '#ff9408'
@@ -105,6 +108,7 @@
     }
 
     function green(){
+        ver.style.color = '#008069'
         nam.style.color = 'black'
         var green = document.getElementById('what')
         person.style.color = '#008069'

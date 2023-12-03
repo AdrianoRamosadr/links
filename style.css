@@ -9,7 +9,7 @@ body{
 }
 
 span#home{
-    padding-left: px;
+    
     position: relative;
 }
 
@@ -18,7 +18,7 @@ span#home i{
     font-size: 1.2em;
     cursor: pointer;
     position: absolute;
-    left: 94px;
+    left: 120px;
     top: 30px;
 }
 
